@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Invoice" />
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Invoice #1497 | figmateam.com</title>
+  </head>
+
+  <body>
+    <!-- ШАПКА: логотип + декоративна бірюзова лінія -->
+    <header class="invoice-header">
+      <div class="container">
+        <div class="header-top-row">
+          <div class="logo">
+            <span class="logo-text">figma</span
+            ><!--
+            --><span class="logo-accent">team</span
+            ><!--
+            --><span class="logo-domain">.com</span>
+          </div>
+
+          <div class="top-line"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- АДРЕСА І НОМЕР ІНВОЙСУ -->
+    <section class="invoice-top-section">
+      <div class="container">
+        <div class="invoice-top-wrapper">
+          <div class="header-left">
+            <div class="address-item">
+              <svg class="container-icon icon" width="14" height="14">
+                <use href="./img/symbol-defs.svg#icon-office"></use>
+              </svg>
+              <p class="address-text">Lita Co, Ltd.999 Conway Blvd.</p>
+            </div>
+
+            <div class="address-item">
+              <svg class="container-icon icon" width="14" height="14">
+                <use href="./img/symbol-defs.svg#icon-location"></use>
+              </svg>
+              <p class="address-text">California 9099, United States</p>
+            </div>
+
+            <div class="address-item">
+              <svg class="container-icon icon" width="14" height="14">
+                <use href="./img/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <p class="address-text">84 - 969877097</p>
+            </div>
+
+            <div class="address-item">
+              <svg class="container-icon icon" width="14" height="14">
+                <use href="./img/symbol-defs.svg#icon-email"></use>
+              </svg>
+              <p class="address-text">figmateam@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="header-right">
+            <h1 class="invoice-title">
+              INVOICE <span class="invoice-number">#1497</span>
+            </h1>
+            <p class="invoice-date">Invoice Date Aug 4, 2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОСНОВНИЙ ВМІСТ -->
+    <main class="invoice-body">
+      <div class="container">
+        <!-- Клієнт + загальна сума -->
+        <div class="billing-row">
+          <div class="client-details">
+            <div class="accent-bar"></div>
+
+            <div class="client-info">
+              <h2 class="client-title">Invoice to Toannd</h2>
+              <p class="client-address">
+                144 Xuan Thuy, Cau Giay, Ha Noi, Viet Nam - 00
+              </p>
+              <a href="mailto:toannd.figmateam@gmail.com" class="client-email">
+                toannd.figmateam@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="total-badge">
+            <span class="total-text">Total Due:</span>
+            <span class="total-price">$9,141.27</span>
+          </div>
+        </div>
+
+        <!-- Заголовок таблиці -->
+        <div class="table-header-details">
+          <div class="header-main">
+            <div class="cyan-square"></div>
+            <span class="header-title">Item Description</span>
+          </div>
+          <div class="header-labels">
+            <span>Unit Price</span>
+            <span>Quantity</span>
+            <span>Total</span>
+          </div>
+        </div>
+
+        <!-- Таблиця позицій -->
+        <table class="invoice-table">
+          <tbody>
+            <tr>
+              <td class="col-description">
+                <strong class="item-name">Wordpress Design</strong>
+                <p class="item-text">
+                  Love is like a butterfly, the more you chase it, the more it
+                  will elude you.
+                </p>
+              </td>
+              <td class="col-price">$100.00</td>
+              <td class="col-qty">40 H</td>
+              <td class="col-total">$4000.00</td>
+            </tr>
+
+            <tr>
+              <td class="col-description">
+                <strong class="item-name">UX/UI Design</strong>
+                <p class="item-text">
+                  But if you turn your attention towards other things it will
+                  come and softly sit on your shoulder.
+                </p>
+              </td>
+              <td class="col-price">$300.00</td>
+              <td class="col-qty">10 H</td>
+              <td class="col-total">$3000.00</td>
+            </tr>
+
+            <tr>
+              <td class="col-description">
+                <strong class="item-name">FontEnd Developer</strong>
+                <p class="item-text">
+                  Love is like a butterfly, the more you chase it, the more it
+                  will elude you.
+                </p>
+              </td>
+              <td class="col-price">$890.00</td>
+              <td class="col-qty">1 H</td>
+              <td class="col-total">$890.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Оплата + підпис зліва, підсумки справа -->
+        <div class="footer-row">
+          <div class="footer-left">
+            <div class="payment-method">
+              <span class="label">Payment Method:</span>
+              <span class="value">Paypal, Visa, Mastercard</span>
+            </div>
+
+            <div class="signature-block">
+              <span class="manager-label">Accounts Manager</span>
+              <h3 class="manager-name">Toan Nguyen</h3>
+              <div class="signature-wrap">
+                <img src="./img/signature.png" alt="Signature of Toan Nguyen" />
+              </div>
+              <p class="thank-you">Thank you for your business!</p>
+            </div>
+          </div>
+
+          <div class="summary-wrapper">
+            <div class="summary-row">
+              <span>Sub Total</span>
+              <strong>$8,141.27</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Tax VAT 10%</span>
+              <strong>$814.12</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Discount 5%</span>
+              <strong>$427.77</strong>
+            </div>
+
+            <div class="summary-row total-row">
+              <span>Total Due</span>
+              <strong>$9,141.27</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ПІДВАЛ -->
+    <footer class="main-footer">
+      <div class="container">
+        <p class="terms">
+          <strong>Terms:</strong> Love is like a butterfly, the more you chase
+          it, the more it will elude you.
+        </p>
+
+        <hr class="footer-divider" />
+
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <div class="logo">
+              <span class="logo-text">figma</span
+              ><!--
+              --><span class="logo-accent">team</span
+              ><!--
+              --><span class="logo-domain">.com</span>
+            </div>
+          </div>
+
+          <address class="footer-contacts">
+            <p>Lita Co, Ltd.999 Conway Blvd.</p>
+            <p>California 9099, United States</p>
+            <p>84 - 969877097 | toannd.figmateam@gmail.com</p>
+          </address>
+
+          <div class="footer-icon">
+            <svg class="icon" width="64" height="64">
+              <use href="./img/symbol-defs.svg#icon-footer"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
